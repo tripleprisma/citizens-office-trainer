@@ -18,7 +18,53 @@ null {
 
 .level-title {
     font-weight: bold;
-    font-size: larger;
+    font-size: ;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* start page */
+
+.start-page-wrapper {
+    overflow: hidden;
+}
+
+.start-page-left {
+    width: 50%;
+    padding-right: 5%;
+    float: left;
+}
+
+.start-page-right {
+    width: fit-content;
+    padding-left: 5%;
+    float: right;
+}
+
+.start-page-img {
+    max-width: 30vw;
+    border: 3px solid #222222;
+}
+
+.primary-button {
+    text-decoration: none;
+    background-color: white;
+    width: 15em;
+    height: 4em;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.primary-button-text {
+    color: #222222;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+
 }
 
 
@@ -48,6 +94,7 @@ null {
     background-color: #d9f6cc;
     flex: auto;
     text-align: center;
+    text-decoration: none;
 
 }
 
@@ -55,6 +102,11 @@ null {
     width: 5em;
     margin-left: 3px;
     background-color: white;
+}
+
+.nav-bar-heading {
+    font-size: 2em;
+    font-weight: bold;
 }
 
 
@@ -72,6 +124,7 @@ body {
     padding-right: 5em;
     border-left: 3px solid #222222;
     border-right: 3px solid #222222;
+    min-height: 85vh;
 }
 
 .main-section {
@@ -83,19 +136,12 @@ body {
     border-bottom: 0;
     border-left: 3px solid #222222;
     border-right: 3px solid #222222;
+    min-height: 85vh;
 }
 
 * {
     box-sizing: border-box;
   }
-
-.callout {
-    background-color: gainsboro;
-    border-radius: 12px;
-    padding: 0.25em;
-    width: 40%;
-    border: 1px solid #222222;
-}
 
 
 /* level selection */
@@ -117,12 +163,18 @@ body {
     text-align: center;
     border: 3px solid #222222;
     text-decoration: inherit;
+    aspect-ratio: 1;
 }
 
 .level:hover {
     background-color: #f2ed72;
     transition: 500ms;
 }
+
+p {
+  background-image: url('img_girl.jpg');
+}
+
 
 
 /* calendar */
