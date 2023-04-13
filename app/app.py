@@ -1,7 +1,7 @@
 from flask import Flask, redirect, url_for, render_template, send_file
 import urllib.request
-from app.extensions.database import db, migrate
-from . import cookies, orders
+# from app.extensions.database import db, migrate
+# from . import cookies, orders
 # from . import cookies, simple_pages, orders
 
 def create_app():

@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template
-from .models import Cookie
+# from .models import cookies
+
 
 # cookies_data = {
 #   'chocolate-chip' : {'name': 'Chocolate Chip', 'price': '$1.50'},
