@@ -1,5 +1,10 @@
 # citizens-office-trainer
 
+Hand-in 4 description:
+
+I have some bugs again I can't figure out. Next week after fixing, completing and understanding the entire tutorial, I will fully focus on continuing to apply everything to my own project.
+
+
 
 Hand-in 3 description:
 

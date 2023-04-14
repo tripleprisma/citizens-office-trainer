@@ -1,4 +1,4 @@
-from app.extensions.database import db
+from app.extensions.database import db, CRUDMixin
 
 class Cookie(db.Model):
   id = db.Column(db.Integer, primary_key=True)
