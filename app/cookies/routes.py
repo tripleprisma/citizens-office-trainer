@@ -1,6 +1,5 @@
 from flask import Blueprint, render_template, request, current_app
-# from .models import cookies
-from app.cookies.models import Cookie
+from .models import Cookie
 
 cookies_data = {
   'chocolate-chip' : {'name': 'Chocolate Chip', 'price': '$1.50'},
@@ -22,5 +21,5 @@ def cookie(slug):
 @blueprint.route('/cookies')
 def cookies():
   page_number = request.args.get('page', 1, type=int)
-  cookies_pagination = Cookie.query.paginate(page_number, current_app.config['COOKIES_PER_PAGE'])
-  return render_template('cookies/index.html', cookies_pagination=cookies_pagination)
+  cookies_pagination = Cookie.query.paginate(page=page_number, per_page=current_app.config['COOKIES_PER_PAGE'])
+  return render_template('cookies/cookies.html', cookies_pagination=cookies_pagination)

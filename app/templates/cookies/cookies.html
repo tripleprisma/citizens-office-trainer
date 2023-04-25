@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block body %}
+
+<h1>Cookies</h1>
+<ul>
+  {% for cookie in cookies_pagination.items %}
+  <li>
+    {% if cookie.price == 0.25 %}
+    <s>{{ cookie.name }}</s>
+    {% else %}
+    <a href="/cookies/{{ cookie.slug }}">{{ cookie.name }}</a>
+    {% endif %}
+  </li>
+  {% endfor %}
+  <nav>
+    {% if cookies_pagination.prev_num %}
+    <a href="{{ url_for('cookies.cookies', page=cookies_pagination.prev_num) }}">Previous Page</a>
+    {% else %}
+    <span>Previous Page</span>
+    {% endif %}
+    <span> - </span>
+    {% if cookies_pagination.next_num %}
+    <a href="{{ url_for('cookies.cookies', page=cookies_pagination.next_num) }}">Next Page</a>
+    {% else %}
+    <span>Next Page</span>
+    {% endif %}
+  </nav>
+</ul>
+
+{% endblock %}
