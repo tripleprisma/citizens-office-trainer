@@ -11,9 +11,9 @@
 </head>
 <body>
     <nav class="navigation">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+        <a href="{{ url_for('cookies.cookies') }}">Go To Cookies</a>
+        <a href="{{ url_for('orders.checkout') }}">Go to Checkout</a>
+        <a href="{{ url_for('simple_pages.index') }}">Home</a>
     </nav>
     {% block body %}{% endblock %}
 </body>

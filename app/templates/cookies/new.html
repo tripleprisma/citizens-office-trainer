@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}My Page{% endblock %}
+
+{% block body %}
+<form action="{{ url_for('cookies.add_cookie') }}" method="post">
+    <input type="text" name="slug" placeholder="Enter cookie slug">
+    <input type="text" name="name" placeholder="Enter cookie name">
+    <input type="text" name="price" placeholder="Enter price here">
+    <button type="submit">Add cookie</button>
+</form>
+{% endblock %}
