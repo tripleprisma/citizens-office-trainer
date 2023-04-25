@@ -5,7 +5,7 @@
 {% block body %}
 <form action="{{url_for('cookies.edit_cookie', id=cookie.id)}}" method="post">
     <input type="text" name="name" value="{{cookie.name}}">
-    <input type="text" name="price" value="{{cookie.price}}">
-    <button type="submit">Edit cookie</button>
+    <input type="text" name="price" value="{{cookie.description}}">
+    <button type="submit">Edit Todo</button>
 </form>
 {% endblock %}

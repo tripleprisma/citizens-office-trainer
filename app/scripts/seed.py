@@ -1,5 +1,5 @@
 from app.app import create_app
-from app.cookies.models import Cookie
+from app.cookies.models import Todo
 from app.extensions.database import db
 
 if __name__ == '__main__':
@@ -16,7 +16,7 @@ cookies_data = {
 }
 
 for slug, cookie in cookies_data.items():
-  new_cookie = Cookie(slug=slug, name=cookie['name'], price=cookie['price'])
+  new_cookie = Todo(slug=slug, name=cookie['name'], price=cookie['price'])
   db.session.add(new_cookie)
 
 db.session.commit()

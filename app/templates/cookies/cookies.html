@@ -4,15 +4,11 @@
 
 {% block body %}
 
-<h1>Cookies</h1>
+<h1>Todos</h1>
 <ul>
   {% for cookie in cookies_pagination.items %}
   <li>
-    {% if cookie.price == 0.25 %}
-    <s>{{ cookie.name }}</s>
-    {% else %}
-    <a href="/cookies/{{ cookie.slug }}">{{ cookie.name }}</a>
-    {% endif %}
+    <a href="/cookies/{{ cookie.id }}">{{ cookie.name }}</a>
   </li>
   {% endfor %}
   <nav>
@@ -28,7 +24,7 @@
     <span>Next Page</span>
     {% endif %}
   </nav>
-  <a href="{{url_for('cookies.add_cookie_page')}}">Add Cookie</a>
+  <a href="{{url_for('cookies.add_cookie_page')}}">Add Todo</a>
 </ul>
 
 {% endblock %}

@@ -35,7 +35,7 @@ def test_post_checkout_creates_order(client):
 
 def test_post_checkout_creates_cookie_order(client):
   # Creates a cookie order related to the order
-  new_cookie = Cookie(slug='chocolate-chip', name='Chocolate Chip', price=1.50)
+  new_cookie = Todo(slug='chocolate-chip', name='Chocolate Chip', description=1.50)
   new_cookie.save()
 
   response = client.post('/checkout', data={

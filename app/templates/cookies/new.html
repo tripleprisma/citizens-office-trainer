@@ -4,9 +4,9 @@
 
 {% block body %}
 <form action="{{ url_for('cookies.add_cookie') }}" method="post">
-    <input type="text" name="slug" placeholder="Enter cookie slug">
-    <input type="text" name="name" placeholder="Enter cookie name">
-    <input type="text" name="price" placeholder="Enter price here">
+    <input type="text" name="slug" placeholder="Enter Todo slug">
+    <input type="text" name="name" placeholder="Enter Todo title">
+    <input type="text" name="price" placeholder="Enter Description here">
     <button type="submit">Add cookie</button>
 </form>
 {% endblock %}
