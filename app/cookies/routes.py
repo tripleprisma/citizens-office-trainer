@@ -2,7 +2,6 @@ from flask import Blueprint, render_template, request, current_app
 # from .models import cookies
 from app.cookies.models import Cookie
 
-
 cookies_data = {
   'chocolate-chip' : {'name': 'Chocolate Chip', 'price': '$1.50'},
   'oatmeal-raisin' : {'name': 'Oatmeal Raisin', 'price': '$1.00'},
@@ -14,13 +13,6 @@ cookies_data = {
 
 blueprint = Blueprint('cookies', __name__)
 
-
-# @blueprint.route('/cookies/<slug>')
-# def cookie(slug):
-#   if slug in cookies_data:
-#     return '<h1>' + cookies_data[slug]['name'] + '</h1>' + '<p>' + cookies_data[slug]['name'] + '</p>'
-#   else:
-#     return 'Sorry we could not find that cookie.' 
 
 @blueprint.route('/cookies/<slug>')
 def cookie(slug):

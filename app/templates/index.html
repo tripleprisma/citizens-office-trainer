@@ -6,20 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Page</title>
 </head>
-<body>
-    <!-- <h1>Hello {{name}}!</h1>
-    <p>You are visitor number {{visitor_number}}!</p> -->
-    <h1>Cookies</h1>
-    <ul>
-      {% for cookie in cookies %}
-        <li>
-          {% if cookie.price == 0.25 %}
-            <s>{{ cookie.name }}</s>
-          {% else %}
-            <a href="/cookies/{{ cookie.slug }}">{{ cookie.name }}</a>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>  
+  <body>
+    <h1>Hello {{name}}!</h1>
+    <p>You are visitor number {{visitor_number}}!</p>
   </body>
 </html>
