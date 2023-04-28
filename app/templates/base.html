@@ -10,19 +10,16 @@
     {% endblock %}
 </head>
 <body>
-    <!-- <nav class="navigation">
-        <a href="{{ url_for('cookies.cookies') }}">Go To Todos</a>
-        <a href="{{ url_for('simple_pages.index') }}">Home</a>
-    </nav> -->
-    <!-- nav bar -->
+
+    <!-- nav bar and layout -->
 
     <nav class="nav">
         <div class="left nav-block">
             <img class="icon" src="https://uploads-ssl.webflow.com/63c013a3c42c784651026c47/63c013a3c42c7817c1026c66_header-star.svg">
         </div>
-        <a href="./index.html" class="mid nav-block">
+        <a href="./" class="mid nav-block">
             <div>
-                <p class="nav-bar-heading">Tripleprisma To-Do</p>
+                <p class="nav-bar-heading">To-Do</p>
             </div>
         </a>
         <div class="right nav-block">
@@ -31,6 +28,10 @@
     </nav>
     <div class="main-section-wrapper">
     <div class="main-section">
+    <nav class="navigation">
+            <a href="{{ url_for('cookies.cookies') }}">Go To Todos</a>
+            <a href="{{ url_for('simple_pages.index') }}">Home</a>
+    </nav>
 
     {% block body %}{% endblock %}
 </body>

@@ -24,7 +24,10 @@
     <span>Next Page</span>
     {% endif %}
   </nav>
-  <a href="{{url_for('cookies.add_cookie_page')}}">Add Todo</a>
+  <!-- <a href="{{url_for('cookies.add_cookie_page')}}">Add Todo</a> -->
+  <a href="{{url_for('cookies.add_cookie_page')}}">
+    <button class="neobrutalistic-btn">Add Todos</button>
+  </a>
 </ul>
 
 {% endblock %}
