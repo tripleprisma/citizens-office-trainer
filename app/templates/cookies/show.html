@@ -5,7 +5,10 @@
 {% block body %}
 <h1>{{cookie.name}}</h1>
 
-<p>Description: {{cookie.description}}</p>
+
+
+<button js-data="description-button">></button>
+<p js-data="description" style="display: none">Description: {{cookie.description}}</p>
 
 <form action="{{ url_for('cookies.delete_cookie', id=cookie.id) }}" method="post">
   <button type="submit">Delete</button>
@@ -15,4 +18,34 @@
 <footer>
   <a href="/cookies">Back to all Todos</a>
 </footer>
+
+<script defer>
+
+  const descriptionButton = document.querySelector('[js-data="description-button"]')
+  const description = document.querySelector('[js-data="description"]')
+
+  function expandDescription() {
+    description.style.display = "block"
+
+    descriptionButton.innerHTML = "^"
+  }
+  function hideDescription() {
+    description.style.display = "none"
+
+    descriptionButton.innerHTML = ">"
+  }
+  let isDescriptionExpanded = false
+
+  descriptionButton.addEventListener("click", function () {
+
+    if (isDescriptionExpanded) {
+      hideDescription()
+    }
+    else {
+      expandDescription()
+    }
+    isDescriptionExpanded = !isDescriptionExpanded
+  })
+
+</script>
 {% endblock %}

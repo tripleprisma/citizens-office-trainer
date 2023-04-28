@@ -1,23 +1,20 @@
-# citizens-office-trainer
+Simple To-Do App
 
-Hand-in 4 description:
+Overview
+The learning project Simple To-Do App is a task management tool designed to help you keep track of your daily tasks. With easy-to-use features, this application allows you to organize your tasks efficiently and focus on what truly matters.
+ 
+Features
+Add Tasks: Quickly create new tasks by entering a task title and optional description.
+Edit Tasks: Easily update task descriptions and titles at any time by clicking on edit.
+Delete Tasks: Remove tasks from the list once they are no longer relevant or have been completed.
 
-I have some bugs again I can't figure out. Next week after fixing, completing and understanding the entire tutorial, I will fully focus on continuing to apply everything to my own project.
-
-
-
-Hand-in 3 description:
-
-I followed the tutorial and ran into many issues. I was trying to adapt what I've learned to my project but for right now, it would be very great to get some more feedback for the current state of the project and the bugs.
-
-
-
-
-
+The app is deployed on https://leonardtodoapp.onrender.com
 
 
 
 Hand-in 1 description:
+
+This description is old and was the original plan. I discarded this idea, because it wouldn't have been very parallel to the module.
 
 The ultimate game to get your new flat registered
 This site will be a fun little game. I moved a few days ago and had to register my new residence. I was very amused by the bad site where I had to find out, that firstly, I have to bring a copy of the registration to the citizen's office in person. And secondly, that there is not a single free slot in the next 4 month as well as no waitlist.
