@@ -5,15 +5,25 @@
     color: #222222;
 }
 
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
 
 /* text */
 
+h1 {
+    font-size: 48px;
+}
+
 .subheading {
-    font-size: larger;
+    font-size: x-large;
 }
 
 .level-title {
     font-weight: bold;
+    font-size: 16px;
 }
 
 h2 {
@@ -23,7 +33,7 @@ h2 {
 
 /* button */
 
-.neobrutalistic-btn {
+/* .neobrutalistic-btn {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -35,25 +45,137 @@ h2 {
     margin-top: 40px;
   }
   
-  .neobrutalistic-btn:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    bottom: -10px;
-    left: -10px;
-    z-index: -1;
-    background-color: #000;
-    transform: skew(-30deg);
-  }
-  
-  .neobrutalistic-btn:hover {
+  .neobrutalistic-btn:hover {0
     background-color: #fff;
     color: #000;
-  }
+  } */
+
+
+
+    .neobrutalistic-btn {
+    background-color: #e0e0e0; /* This should match the background color */
+    border: none;
+    padding: 16px 32px;
+    border-radius: 16px;
+    outline: none;
+    cursor: pointer;
+    /* The box-shadow below creates the neumorphic effect */
+    box-shadow: 8px 8px 16px rgba(163, 177, 198, 0.6), 
+               -8px -8px 16px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s ease-in-out;
+    }
+
+    .icon-button {
+        padding: 24px;
+    }
+
+    .neobrutalistic-btn:hover {
+        /* Adjusting the shadows slightly for a "pressed" effect */
+        box-shadow: 4px 4px 8px rgba(163, 177, 198, 0.6), 
+                -4px -4px 8px rgba(255, 255, 255, 0.5);
+    }
+
+    .neobrutalistic-btn:active {
+        /* Making the "pressed" effect more prominent on active/click */
+        box-shadow: inset 2px 2px 4px rgba(163, 177, 198, 0.6), inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+                2px 2px 4px rgba(163, 177, 198, 0.6), -2px -2px 4px rgba(255, 255, 255, 0.5); /* Inner shadows */
+    }
   
 
-/* input field */
+
+    /* sections */
+
+    .center-horizontal {
+        justify-content: center;
+        display: flex;
+        padding-bottom: 0em;
+    }
+
+    .shop-item-card {
+        background-color: #e0e0e0; /* This should match the background color */
+        border: none;
+        /* padding: 16px 30px; */
+        border-radius: 16px;
+        outline: none;
+        cursor: pointer;
+        height: auto;
+        /* The box-shadow below creates the neumorphic effect */
+        box-shadow: 8px 8px 16px rgba(163, 177, 198, 0.6), 
+                -8px -8px 16px rgba(255, 255, 255, 0.5);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .shop-item-card:hover {
+        /* Adjusting the shadows slightly for a "pressed" effect */
+        box-shadow: 4px 4px 8px rgba(163, 177, 198, 0.6), 
+                -4px -4px 8px rgba(255, 255, 255, 0.5);
+    }
+
+
+    .shop-item-card:active {
+        box-shadow: 2px 2px 4px rgba(163, 177, 198, 0.6), 
+        -2px -2px 4px rgba(255, 255, 255, 0.5);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px; /* Space between items */
+        padding-top: 4em;
+        }
+
+    .shop-item-img {
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom: 0;
+    }
+
+    .shop-item-text-wrapper {
+        font-size: 24px;
+        padding: 32px;
+        height: auto;
+        display: flex; /* This will arrange child divs horizontally */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-div {
+        width: fill;
+        height: auto;
+    }
+
+    .right-div {
+        width: auto;
+        height: auto;
+    }
+
+
+
+    .product-title {
+        margin-top: 0;
+        margin-bottom: 16px;
+        font-weight: lighter;
+    }
+
+    .product-price {
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .collection-heading-wrapper {
+        padding-top: 128px;
+    }
+
+    .heading-wrapper {
+        text-align: center;
+    }
+
+
+
+    /* input field */
 
     .neobrutalistic-input {
         height: 2.8rem;
@@ -67,63 +189,21 @@ h2 {
     }
     
     .neobrutalistic-input:focus {
-        outline: none;
-        box-shadow: inset 0 0 0 1px #fff, 0 0 0 3px #000;
+        outline:auto;
+        box-shadow: inset 0 0 0 10px #fff, 0 0 0 10px #000;
     }
 
     
 
 
-/* start page */
-
-.start-page-wrapper {
-    overflow: hidden;
-}
-
-.start-page-left {
-    width: 50%;
-    padding-right: 5%;
-    float: left;
-}
-
-.start-page-right {
-    width: fit-content;
-    padding-left: 5%;
-    float: right;
-}
-
-.start-page-img {
-    max-width: 30vw;
-    border: 3px solid #222222;
-}
-
-.primary-button {
-    text-decoration: none;
-    background-color: white;
-    width: 15em;
-    height: 4em;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-}
-
-.primary-button-text {
-    color: #222222;
-    font-weight: bold;
-    font-size: 1.2em;
-    text-transform: uppercase;
-
-}
 
 
 /* navbar */
 
 .nav {
-    background-color: #222222;
     overflow: hidden;
-    height: 5em;
-    padding: 3px;
+    height: auto;
+    padding: 1em;
     display: flex;
 }
 
@@ -140,7 +220,6 @@ h2 {
 }
 
 .mid {
-    background-color: #d9f6cc;
     flex: auto;
     text-align: center;
     text-decoration: none;
@@ -155,129 +234,34 @@ h2 {
 
 .nav-bar-heading {
     font-size: 2em;
-    font-weight: bold;
+    font-weight: light;
 }
 
 
 /* other */
 
 body {
-    background-color: #c2f4fe;
-    margin: 5%;
+    background-color: #e0e0e0;
+    margin: 0%;
     margin-bottom: 0;
 }
 
 .main-section-wrapper {
-    background-color: #fee3ce;
-    padding-left: 5em;
-    padding-right: 5em;
-    border-left: 3px solid #222222;
-    border-right: 3px solid #222222;
     min-height: 85vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .main-section {
-    background-color: #fee3ce;
+    width: 1200px;
     height: 100%;
-    padding: 3em;
-    border: 3px solid #222222;
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 3px solid #222222;
-    border-right: 3px solid #222222;
     min-height: 85vh;
+    padding: 8em;  
+    padding-top: 3em;
 }
 
 * {
     box-sizing: border-box;
   }
-
-
-/* level selection */
-
-.level-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 10em;
-}
-
-.level {
-    background-color: #fff;
-    transition: 500ms;
-    flex: 230px;
-    vertical-align: baseline;
-    text-align: center;
-    border: 3px solid #222222;
-    text-decoration: inherit;
-    aspect-ratio: 1;
-    overflow: hidden;
-}
-
-.level:hover {
-    background-color: #f2ed72;
-    transition: 500ms;
-}
-
-.level-background-image {
-    max-height: 100%;
-}
-
-
-/* calendar */
-
-.calendar-month-heading {
-    background-color: #f4f4f4;
-    height: 3.5em;
-    border: 1.25px solid #222222;
-    border-bottom: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 5em;
-}
-
-.calendar-heading {
-    font-size: large;
-}
-
-.calendar-section {
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    width: 100%;
-    height: fit-content;
-    border: 0.5px solid #222222;
-}
-
-.calendar-day {
-    background-color: #f4e2e1;
-    flex: 14.2%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.5px solid #222222;
-    height: 3.5em;
-}
-
-.calendar-day-free {
-    background-color: #fff;
-}
-
-.calendar-day-heading {
-    background-color: #f4f4f4;
-}
-
-.score-bar {
-    background-color: #fff;
-    transition: 500ms;
-    height: 5em;
-    vertical-align: baseline;
-    text-align: center;
-    border: 3px solid #222222;
-    margin-top: 40px;
-}
 

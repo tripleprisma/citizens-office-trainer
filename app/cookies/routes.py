@@ -47,7 +47,6 @@ def add_cookie_page():
 
 @blueprint.post('/add-cookie')
 def add_cookie():
-    print("test")
 
     cookie = Todo(
         slug=request.form.get('slug'),

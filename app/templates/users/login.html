@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Cookieshop | Login{% endblock %}
+
+{% block body %}
+  <h1>Login</h1>
+
+  <form method="POST">
+    {% if error %}
+      <p style="color: tomato;">{{ error }}</p>
+     {% endif %}
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required>
+    </div>
+    
+    <input type="submit" value="Login">
+  </form>  
+{% endblock %}
